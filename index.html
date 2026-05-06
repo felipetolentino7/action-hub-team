@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<!-- saved from url=(1935)https://austyn-production-s3-bucket.s3.amazonaws.com/users/4e5ab919-7e07-46dd-87ed-a788016d198d/dropbox/0d22ddb1-4831-47b9-a2ec-230f1934837a/ActionHubTeam.html?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIATVT54XNG3GZ3XASA%2F20260506%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260506T175336Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Security-Token=IQoJb3JpZ2luX2VjENr%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDGV1LWNlbnRyYWwtMSJHMEUCIQDvntoobYmpXU9J9O8xqdB6c941PZgx43KC2hkvGtSQnQIgCJBgL0MhBsnfqH8yrjNTObf6CIG3OlIPpAWQko16ZaQqzwUIo%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgwyNTI1OTMzNTU1OTciDAQzYnmNeCbYXo7fryqjBU0C2xVN%2BUCnU3Lfn5KF3ib0ZVjKPcH2SMuv23mKiFhzAWPGeeKisCR3tmnB0y6DFNBjlsNSpzL%2FNlIBdkgwYFY%2FdjIVEAdFMVHebEmaIYjsh4%2BeTqUl1c3YcwwT5UGTCRqhgX7DNwQO3toUIcmyk1OB1riNz9XhaTeBs%2FuKiExXK9LuYcXfUnqD8nE%2BVjqUxLVOmwupQopgiNei7o%2Bw%2FbAkXe%2FUj9b06c4DkNeU4XVxR8ZyzEdd4YFpkSlN13pO0UhACjBDL2ZjZzcCzfysVTFW3tFD9TmLs1iJrXq7lAiK2I88DoexmgwMvGMxCN%2BBcKE7EiNX6p0xcPSa343TwwYhDD37pxh0WGGHuG7RWVhF10oit8lloC5eKUhfiWkZeDUQsA9tnN3CJGiMM8mHe5uFvTTCcVnM5yaH1%2FdTKZ5hAfOkfmw2z8Z6QE9%2FaZKAakBSH69XRzBtQ9e67WLxPgcGLXFhMGF10M3iR8RIDQPERxqijIZbxGGPW6OenkGdBpt8e%2Ftr8NtvXHF0ZPUBQavAREyRPM2xtbVPwtt1qQnBNY2dQcAfjtba4xZEvbnZNVRNt8hqMbX4Hvu%2FYI1Iy18ysEHmNJGwbUvLjY2Q46iYzBBb%2FPkKHakuH62mTw1kze5dwf%2BXM3haihrp%2BB5C6riy9DcSovsltnS8%2BcFBETgUI6fHq68OyTYLTj8pwMRxwl502g%2FLjJranJvWM7MZan%2FZpCWsYWrHyWJFR0Pb36HVHIrVCXUH5BeGSkvx%2FAj5cUO7XJ%2BKO%2B1cwttFhUXZ5KH2m45haNRxtYzbNhfjJjWS0vV9%2Fxt%2BasMmFGyPo6c%2BMu4D7IHIf8AD%2BMT3eJE%2BPrjd93814unmvdLW0NMQNhBRO0qwVsJ4PbRqCKbhmzyYRBsxCTCG%2B%2B3PBjqxAVWPGx7LdegNf%2FxPVfVvZ8L8Gf97%2B%2FOg9VFIxDEHqPnxMi5Ma7t165xfwBlEnIq7FMVVGgsHUv80bdhM%2BP9xJnjgCxlRY04s%2FbmI8uMVkIEbWzAwwMsczV%2FiqSzHYGrzP5sqC54RRd869SmfOGJQFN2yLdv6qEipV3KBbU%2FPQyPlotLLVPvQy7jPa2aMni2uCMHeP1Q5jgLMME4OjQbARtCMrZ6pkuwATD2zx%2BXwOnitUQ%3D%3D&X-Amz-Signature=e432f9e6db4a78a582f56e4a5b7c7c9473797c5bf6fa02abc48282a6d38d0088 -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Action Hub Team</title>
+<script src="./Action Hub Team_files/firebase-app-compat.js.download"></script>
+<script src="./Action Hub Team_files/firebase-auth-compat.js.download"></script>
+<script src="./Action Hub Team_files/firebase-firestore-compat.js.download"></script>
+<style>
+  :root {
+    --bg: #f0f4f8;
+    --surface: #ffffff;
+    --surface2: #f7fafc;
+    --border: #e2e8f0;
+    --text: #1a202c;
+    --text2: #4a5568;
+    --text3: #718096;
+    --primary: #6c63ff;
+    --primary-dark: #5a52d5;
+    --accent: #00d4aa;
+    --danger: #ff4757;
+    --warning: #ffa502;
+    --success: #2ed573;
+    --shadow: 0 2px 12px rgba(0,0,0,0.08);
+    --shadow-lg: 0 8px 32px rgba(0,0,0,0.12);
+    --radius: 12px;
+    --radius-sm: 8px;
+  }
+  [data-theme="dark"] {
+    --bg: #0f1117;
+    --surface: #1a1d27;
+    --surface2: #21253a;
+    --border: #2d3748;
+    --text: #f7fafc;
+    --text2: #cbd5e0;
+    --text3: #718096;
+    --shadow: 0 2px 12px rgba(0,0,0,0.3);
+    --shadow-lg: 0 8px 32px rgba(0,0,0,0.4);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); transition: all 0.3s; min-height: 100vh; }
+
+  /* AUTH */
+  #auth-screen { display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 20px; }
+  .auth-card { background: var(--surface); border-radius: 20px; padding: 48px 40px; width: 100%; max-width: 420px; box-shadow: var(--shadow-lg); }
+  .auth-logo { text-align: center; margin-bottom: 32px; }
+  .auth-logo h1 { font-size: 28px; font-weight: 800; background: linear-gradient(135deg, var(--primary), var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .auth-logo p { color: var(--text3); font-size: 13px; margin-top: 4px; }
+  .auth-tabs { display: flex; background: var(--surface2); border-radius: var(--radius-sm); padding: 4px; margin-bottom: 28px; }
+  .auth-tab { flex: 1; padding: 8px; text-align: center; border-radius: 6px; cursor: pointer; font-size: 14px; font-weight: 500; color: var(--text3); transition: all 0.2s; border: none; background: none; }
+  .auth-tab.active { background: var(--surface); color: var(--primary); box-shadow: var(--shadow); }
+  .form-group { margin-bottom: 16px; }
+  .form-group label { display: block; font-size: 13px; font-weight: 500; color: var(--text2); margin-bottom: 6px; }
+  .form-group input { width: 100%; padding: 12px 16px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); background: var(--surface2); color: var(--text); font-size: 15px; transition: border-color 0.2s; outline: none; }
+  .form-group input:focus { border-color: var(--primary); }
+  .btn { width: 100%; padding: 13px; border: none; border-radius: var(--radius-sm); font-size: 15px; font-weight: 600; cursor: pointer; transition: all 0.2s; }
+  .btn-primary { background: linear-gradient(135deg, var(--primary), var(--primary-dark)); color: #fff; }
+  .btn-primary:hover { transform: translateY(-1px); box-shadow: 0 4px 16px rgba(108,99,255,0.4); }
+  .auth-error { color: var(--danger); font-size: 13px; text-align: center; margin-top: 12px; min-height: 20px; }
+
+  /* APP */
+  #app-screen { display: none; min-height: 100vh; }
+  .sidebar { position: fixed; left: 0; top: 0; bottom: 0; width: 240px; background: var(--surface); border-right: 1px solid var(--border); padding: 24px 0; display: flex; flex-direction: column; z-index: 100; }
+  .sidebar-logo { padding: 0 24px 24px; border-bottom: 1px solid var(--border); }
+  .sidebar-logo h2 { font-size: 18px; font-weight: 800; background: linear-gradient(135deg, var(--primary), var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .sidebar-logo span { font-size: 11px; color: var(--text3); display: block; margin-top: 2px; }
+  .sidebar-nav { flex: 1; padding: 16px 12px; }
+  .nav-item { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: var(--radius-sm); cursor: pointer; color: var(--text2); font-size: 14px; font-weight: 500; transition: all 0.2s; margin-bottom: 4px; border: none; background: none; width: 100%; text-align: left; }
+  .nav-item:hover { background: var(--surface2); color: var(--text); }
+  .nav-item.active { background: linear-gradient(135deg, rgba(108,99,255,0.15), rgba(0,212,170,0.1)); color: var(--primary); }
+  .nav-item svg { width: 18px; height: 18px; flex-shrink: 0; }
+  .sidebar-footer { padding: 16px 12px; border-top: 1px solid var(--border); }
+  .user-info { display: flex; align-items: center; gap: 10px; padding: 8px 12px; border-radius: var(--radius-sm); }
+  .user-avatar { width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(135deg, var(--primary), var(--accent)); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700; font-size: 14px; flex-shrink: 0; }
+  .user-name { font-size: 13px; font-weight: 600; color: var(--text); }
+  .user-role { font-size: 11px; color: var(--text3); }
+  .btn-logout { width: 100%; padding: 8px; border: 1px solid var(--border); border-radius: var(--radius-sm); background: none; color: var(--text2); font-size: 13px; cursor: pointer; margin-top: 8px; transition: all 0.2s; }
+  .btn-logout:hover { background: var(--danger); color: #fff; border-color: var(--danger); }
+
+  .main-content { margin-left: 240px; padding: 32px; min-height: 100vh; }
+  .topbar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 32px; }
+  .topbar h1 { font-size: 24px; font-weight: 700; }
+  .topbar-actions { display: flex; align-items: center; gap: 12px; }
+  .theme-toggle { width: 40px; height: 40px; border-radius: 50%; border: 1.5px solid var(--border); background: var(--surface); cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 18px; transition: all 0.2s; }
+  .theme-toggle:hover { border-color: var(--primary); }
+  .btn-new { padding: 10px 20px; background: linear-gradient(135deg, var(--primary), var(--primary-dark)); color: #fff; border: none; border-radius: var(--radius-sm); font-size: 14px; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 6px; transition: all 0.2s; }
+  .btn-new:hover { transform: translateY(-1px); box-shadow: 0 4px 16px rgba(108,99,255,0.4); }
+
+  /* STATS */
+  .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; margin-bottom: 28px; }
+  .stat-card { background: var(--surface); border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
+  .stat-label { font-size: 12px; color: var(--text3); font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; }
+  .stat-value { font-size: 32px; font-weight: 800; margin-top: 4px; }
+  .stat-card.total .stat-value { color: var(--primary); }
+  .stat-card.andamento .stat-value { color: var(--warning); }
+  .stat-card.concluido .stat-value { color: var(--success); }
+  .stat-card.nao-iniciado .stat-value { color: var(--text3); }
+  .stat-card.aguardando .stat-value { color: var(--accent); }
+
+  /* FILTERS */
+  .filters { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; align-items: center; }
+  .filter-btn { padding: 7px 16px; border-radius: 20px; border: 1.5px solid var(--border); background: var(--surface); color: var(--text2); font-size: 13px; cursor: pointer; transition: all 0.2s; font-weight: 500; }
+  .filter-btn:hover, .filter-btn.active { border-color: var(--primary); color: var(--primary); background: rgba(108,99,255,0.08); }
+  .search-box { padding: 8px 16px; border: 1.5px solid var(--border); border-radius: 20px; background: var(--surface); color: var(--text); font-size: 13px; outline: none; width: 220px; }
+  .search-box:focus { border-color: var(--primary); }
+
+  /* ACTIONS TABLE */
+  .actions-grid { display: flex; flex-direction: column; gap: 12px; }
+  .action-card { background: var(--surface); border-radius: var(--radius); padding: 20px 24px; box-shadow: var(--shadow); border: 1px solid var(--border); display: flex; align-items: center; gap: 16px; transition: all 0.2s; }
+  .action-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-1px); }
+  .action-priority { width: 4px; height: 48px; border-radius: 4px; flex-shrink: 0; }
+  .priority-alta { background: var(--danger); }
+  .priority-media { background: var(--warning); }
+  .priority-baixa { background: var(--success); }
+  .action-info { flex: 1; min-width: 0; }
+  .action-title { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .action-meta { display: flex; gap: 16px; flex-wrap: wrap; }
+  .action-meta span { font-size: 12px; color: var(--text3); display: flex; align-items: center; gap: 4px; }
+  .status-badge { padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; white-space: nowrap; }
+  .status-nao-iniciado { background: rgba(113,128,150,0.15); color: var(--text3); }
+  .status-em-andamento { background: rgba(255,165,2,0.15); color: var(--warning); }
+  .status-aguardando { background: rgba(0,212,170,0.15); color: var(--accent); }
+  .status-concluido { background: rgba(46,213,115,0.15); color: var(--success); }
+  .action-actions { display: flex; gap: 8px; }
+  .icon-btn { width: 34px; height: 34px; border-radius: var(--radius-sm); border: 1.5px solid var(--border); background: var(--surface2); cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 15px; transition: all 0.2s; }
+  .icon-btn:hover { border-color: var(--primary); color: var(--primary); }
+  .icon-btn.danger:hover { border-color: var(--danger); color: var(--danger); }
+
+  /* TEAM VIEW */
+  .team-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
+  .team-card { background: var(--surface); border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
+  .team-card-header { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+  .team-avatar { width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, var(--primary), var(--accent)); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700; font-size: 16px; }
+  .team-name { font-size: 15px; font-weight: 600; }
+  .team-email { font-size: 12px; color: var(--text3); }
+  .team-progress { margin-top: 12px; }
+  .progress-bar { height: 6px; background: var(--border); border-radius: 4px; overflow: hidden; margin-top: 6px; }
+  .progress-fill { height: 100%; background: linear-gradient(90deg, var(--primary), var(--accent)); border-radius: 4px; transition: width 0.5s; }
+  .progress-label { display: flex; justify-content: space-between; font-size: 12px; color: var(--text3); }
+
+  /* MODAL */
+  .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); backdrop-filter: blur(4px); z-index: 1000; display: none; align-items: center; justify-content: center; padding: 20px; }
+  .modal-overlay.open { display: flex; }
+  .modal { background: var(--surface); border-radius: 20px; padding: 32px; width: 100%; max-width: 560px; box-shadow: var(--shadow-lg); max-height: 90vh; overflow-y: auto; }
+  .modal-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; }
+  .modal-header h2 { font-size: 20px; font-weight: 700; }
+  .modal-close { width: 32px; height: 32px; border-radius: 50%; border: none; background: var(--surface2); cursor: pointer; font-size: 18px; display: flex; align-items: center; justify-content: center; color: var(--text2); }
+  .modal-close:hover { background: var(--danger); color: #fff; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .form-group select, .form-group textarea { width: 100%; padding: 12px 16px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); background: var(--surface2); color: var(--text); font-size: 14px; outline: none; font-family: inherit; }
+  .form-group select:focus, .form-group textarea:focus { border-color: var(--primary); }
+  .form-group textarea { resize: vertical; min-height: 80px; }
+  .modal-footer { display: flex; gap: 12px; margin-top: 24px; }
+  .btn-cancel { flex: 1; padding: 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); background: none; color: var(--text2); font-size: 14px; font-weight: 600; cursor: pointer; }
+  .btn-save { flex: 2; padding: 12px; background: linear-gradient(135deg, var(--primary), var(--primary-dark)); color: #fff; border: none; border-radius: var(--radius-sm); font-size: 14px; font-weight: 600; cursor: pointer; }
+
+  /* COMMENTS */
+  .comments-section { margin-top: 20px; border-top: 1px solid var(--border); padding-top: 16px; }
+  .comments-section h4 { font-size: 14px; font-weight: 600; margin-bottom: 12px; color: var(--text2); }
+  .comment { background: var(--surface2); border-radius: var(--radius-sm); padding: 12px; margin-bottom: 8px; }
+  .comment-author { font-size: 12px; font-weight: 600; color: var(--primary); }
+  .comment-date { font-size: 11px; color: var(--text3); margin-left: 8px; }
+  .comment-text { font-size: 13px; color: var(--text2); margin-top: 4px; }
+  .comment-input { display: flex; gap: 8px; margin-top: 12px; }
+  .comment-input input { flex: 1; padding: 10px 14px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); background: var(--surface); color: var(--text); font-size: 13px; outline: none; }
+  .comment-input input:focus { border-color: var(--primary); }
+  .btn-comment { padding: 10px 16px; background: var(--primary); color: #fff; border: none; border-radius: var(--radius-sm); font-size: 13px; cursor: pointer; font-weight: 600; }
+
+  /* METAS */
+  .meta-card { background: var(--surface); border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow); border: 1px solid var(--border); margin-bottom: 16px; }
+  .meta-header { display: flex; justify-content: space-between; align-items: start; margin-bottom: 16px; }
+  .meta-title { font-size: 17px; font-weight: 700; }
+  .meta-desc { font-size: 13px; color: var(--text3); margin-top: 4px; }
+  .meta-big-progress { height: 10px; background: var(--border); border-radius: 6px; overflow: hidden; margin-top: 12px; }
+  .meta-big-fill { height: 100%; background: linear-gradient(90deg, var(--primary), var(--accent)); border-radius: 6px; transition: width 0.8s; }
+  .meta-stats { display: flex; gap: 24px; margin-top: 12px; }
+  .meta-stat { font-size: 13px; color: var(--text3); }
+  .meta-stat strong { color: var(--text); font-size: 18px; display: block; }
+
+  /* EMPTY STATE */
+  .empty-state { text-align: center; padding: 60px 20px; color: var(--text3); }
+  .empty-state .emoji { font-size: 48px; margin-bottom: 12px; }
+  .empty-state p { font-size: 15px; }
+
+  /* ADMIN BADGE */
+  .admin-badge { background: linear-gradient(135deg, var(--primary), var(--accent)); color: #fff; font-size: 10px; padding: 2px 8px; border-radius: 10px; font-weight: 600; }
+
+  /* PAGE SECTIONS */
+  .page { display: none; }
+  .page.active { display: block; }
+
+  .loading { text-align: center; padding: 40px; color: var(--text3); }
+
+  @media (max-width: 768px) {
+    .sidebar { transform: translateX(-100%); }
+    .main-content { margin-left: 0; padding: 16px; }
+    .form-row { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- AUTH SCREEN -->
+<div id="auth-screen" style="display: flex;">
+  <div class="auth-card">
+    <div class="auth-logo">
+      <h1>⚡ Action Hub Team</h1>
+      <p>HSE R&amp;D · Syngenta</p>
+    </div>
+    <div class="auth-tabs">
+      <button class="auth-tab active" onclick="switchTab(&#39;login&#39;)">Entrar</button>
+      <button class="auth-tab" onclick="switchTab(&#39;register&#39;)">Criar conta</button>
+    </div>
+    <div id="login-form">
+      <div class="form-group">
+        <label>E-mail</label>
+        <input type="email" id="login-email" placeholder="seu@email.com">
+      </div>
+      <div class="form-group">
+        <label>Senha</label>
+        <input type="password" id="login-password" placeholder="••••••••" onkeydown="if(event.key===&#39;Enter&#39;) doLogin()">
+      </div>
+      <button class="btn btn-primary" onclick="doLogin()">Entrar</button>
+    </div>
+    <div id="register-form" style="display:none">
+      <div class="form-group">
+        <label>Nome completo</label>
+        <input type="text" id="reg-name" placeholder="Seu nome">
+      </div>
+      <div class="form-group">
+        <label>E-mail</label>
+        <input type="email" id="reg-email" placeholder="seu@syngenta.com">
+      </div>
+      <div class="form-group">
+        <label>Senha</label>
+        <input type="password" id="reg-password" placeholder="Mínimo 6 caracteres">
+      </div>
+      <button class="btn btn-primary" onclick="doRegister()">Criar conta</button>
+    </div>
+    <div class="auth-error" id="auth-error"></div>
+  </div>
+</div>
+
+<!-- APP SCREEN -->
+<div id="app-screen" style="display: none;">
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <h2>⚡ Action Hub</h2>
+      <span>HSE R&amp;D · Syngenta</span>
+    </div>
+    <nav class="sidebar-nav">
+      <button class="nav-item active" onclick="showPage(&#39;dashboard&#39;)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg>
+        Dashboard
+      </button>
+      <button class="nav-item" onclick="showPage(&#39;actions&#39;)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"></path></svg>
+        Minhas Ações
+      </button>
+      <button class="nav-item" onclick="showPage(&#39;metas&#39;)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+        Metas da Equipe
+      </button>
+      <button class="nav-item" id="nav-team" style="display:none" onclick="showPage(&#39;team&#39;)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 00-3-3.87"></path><path d="M16 3.13a4 4 0 010 7.75"></path></svg>
+        Visão da Equipe
+      </button>
+    </nav>
+    <div class="sidebar-footer">
+      <div class="user-info">
+        <div class="user-avatar" id="sidebar-avatar">?</div>
+        <div>
+          <div class="user-name" id="sidebar-name">Carregando...</div>
+          <div class="user-role" id="sidebar-role">usuário</div>
+        </div>
+      </div>
+      <button class="btn-logout" onclick="doLogout()">Sair</button>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <div class="topbar">
+      <h1 id="page-title">Dashboard</h1>
+      <div class="topbar-actions">
+        <button class="theme-toggle" onclick="toggleTheme()" title="Alternar tema">🌙</button>
+        <button class="btn-new" onclick="openModal()">+ Nova Ação</button>
+      </div>
+    </div>
+
+    <!-- DASHBOARD -->
+    <div class="page active" id="page-dashboard">
+      <div class="stats-grid" id="stats-grid">
+        <div class="stat-card total"><div class="stat-label">Total</div><div class="stat-value" id="stat-total">0</div></div>
+        <div class="stat-card nao-iniciado"><div class="stat-label">Não iniciado</div><div class="stat-value" id="stat-nao">0</div></div>
+        <div class="stat-card andamento"><div class="stat-label">Em andamento</div><div class="stat-value" id="stat-and">0</div></div>
+        <div class="stat-card aguardando"><div class="stat-label">Aguardando</div><div class="stat-value" id="stat-agu">0</div></div>
+        <div class="stat-card concluido"><div class="stat-label">Concluído</div><div class="stat-value" id="stat-con">0</div></div>
+      </div>
+      <div class="meta-card" style="margin-bottom:0">
+        <div class="meta-header">
+          <div>
+            <div class="meta-title">Seu Progresso</div>
+            <div class="meta-desc" id="dash-progress-desc">Ações concluídas</div>
+          </div>
+          <div style="font-size:28px;font-weight:800;color:var(--primary)" id="dash-percent">0%</div>
+        </div>
+        <div class="meta-big-progress"><div class="meta-big-fill" id="dash-bar" style="width:0%"></div></div>
+      </div>
+    </div>
+
+    <!-- ACTIONS -->
+    <div class="page" id="page-actions">
+      <div class="filters">
+        <button class="filter-btn active" onclick="filterActions(&#39;all&#39;, this)">Todas</button>
+        <button class="filter-btn" onclick="filterActions(&#39;Não iniciado&#39;, this)">Não iniciado</button>
+        <button class="filter-btn" onclick="filterActions(&#39;Em andamento&#39;, this)">Em andamento</button>
+        <button class="filter-btn" onclick="filterActions(&#39;Aguardando&#39;, this)">Aguardando</button>
+        <button class="filter-btn" onclick="filterActions(&#39;Concluído&#39;, this)">Concluído</button>
+        <input type="text" class="search-box" placeholder="🔍 Buscar ação..." oninput="searchActions(this.value)">
+      </div>
+      <div class="actions-grid" id="actions-list">
+        <div class="loading">Carregando ações...</div>
+      </div>
+    </div>
+
+    <!-- METAS -->
+    <div class="page" id="page-metas">
+      <div id="metas-list"><div class="loading">Carregando metas...</div></div>
+      <div id="admin-meta-section" style="display:none;margin-top:24px">
+        <button class="btn-new" style="width:auto" onclick="openMetaModal()">+ Nova Meta</button>
+      </div>
+    </div>
+
+    <!-- TEAM (admin only) -->
+    <div class="page" id="page-team">
+      <div class="team-grid" id="team-list">
+        <div class="loading">Carregando equipe...</div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- ACTION MODAL -->
+<div class="modal-overlay" id="action-modal">
+  <div class="modal">
+    <div class="modal-header">
+      <h2 id="modal-title">Nova Ação</h2>
+      <button class="modal-close" onclick="closeModal()">×</button>
+    </div>
+    <div class="form-group">
+      <label>Título da ação *</label>
+      <input type="text" id="act-title" placeholder="Descreva a ação">
+    </div>
+    <div class="form-group">
+      <label>Descrição</label>
+      <textarea id="act-desc" placeholder="Detalhes da ação..."></textarea>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Prioridade</label>
+        <select id="act-priority">
+          <option value="Alta">🔴 Alta</option>
+          <option value="Média" selected="">🟡 Média</option>
+          <option value="Baixa">🟢 Baixa</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Status</label>
+        <select id="act-status">
+          <option value="Não iniciado">Não iniciado</option>
+          <option value="Em andamento">Em andamento</option>
+          <option value="Aguardando">Aguardando</option>
+          <option value="Concluído">Concluído</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Prazo (opcional)</label>
+        <input type="date" id="act-deadline">
+      </div>
+      <div class="form-group" id="field-responsible" style="display:none">
+        <label>Responsável</label>
+        <select id="act-responsible"></select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Facilitadores (opcional)</label>
+      <input type="text" id="act-facilitators" placeholder="Nomes separados por vírgula">
+    </div>
+
+    <!-- COMMENTS (when editing) -->
+    <div class="comments-section" id="comments-section" style="display:none">
+      <h4>💬 Comentários</h4>
+      <div id="comments-list"></div>
+      <div class="comment-input">
+        <input type="text" id="comment-text" placeholder="Adicionar comentário..." onkeydown="if(event.key===&#39;Enter&#39;) addComment()">
+        <button class="btn-comment" onclick="addComment()">Enviar</button>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <button class="btn-cancel" onclick="closeModal()">Cancelar</button>
+      <button class="btn-save" onclick="saveAction()">Salvar Ação</button>
+    </div>
+  </div>
+</div>
+
+<!-- META MODAL -->
+<div class="modal-overlay" id="meta-modal">
+  <div class="modal">
+    <div class="modal-header">
+      <h2>Nova Meta da Equipe</h2>
+      <button class="modal-close" onclick="closeMetaModal()">×</button>
+    </div>
+    <div class="form-group">
+      <label>Título da meta *</label>
+      <input type="text" id="meta-title-input" placeholder="Ex: Reduzir incidentes em 20%">
+    </div>
+    <div class="form-group">
+      <label>Descrição</label>
+      <textarea id="meta-desc-input" placeholder="Detalhes da meta..."></textarea>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Meta (número)</label>
+        <input type="number" id="meta-target" placeholder="Ex: 100">
+      </div>
+      <div class="form-group">
+        <label>Atual</label>
+        <input type="number" id="meta-current" placeholder="Ex: 45">
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Unidade (opcional)</label>
+      <input type="text" id="meta-unit" placeholder="Ex: %, ações, inspeções...">
+    </div>
+    <div class="modal-footer">
+      <button class="btn-cancel" onclick="closeMetaModal()">Cancelar</button>
+      <button class="btn-save" onclick="saveMeta()">Salvar Meta</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ==================== FIREBASE CONFIG ====================
+const firebaseConfig = {
+  apiKey: "AIzaSyAbzFXOdjpg5_8uZsKqwGgRPNIIhLypxFY",
+  authDomain: "action-hub-team.firebaseapp.com",
+  projectId: "action-hub-team",
+  storageBucket: "action-hub-team.firebasestorage.app",
+  messagingSenderId: "575561845386",
+  appId: "1:575561845386:web:e6895ca76d74e333a8bb73",
+  measurementId: "G-CS2RS71GJF"
+};
+
+firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth();
+const db = firebase.firestore();
+
+// ==================== STATE ====================
+let currentUser = null;
+let currentUserData = null;
+let allActions = [];
+let currentFilter = 'all';
+let currentSearch = '';
+let editingActionId = null;
+let unsubActions = null;
+
+// ==================== THEME ====================
+const savedTheme = localStorage.getItem('aht-theme') || 'light';
+if (savedTheme === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+
+function toggleTheme() {
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  if (isDark) {
+    document.documentElement.removeAttribute('data-theme');
+    localStorage.setItem('aht-theme', 'light');
+    document.querySelector('.theme-toggle').textContent = '🌙';
+  } else {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    localStorage.setItem('aht-theme', 'dark');
+    document.querySelector('.theme-toggle').textContent = '☀️';
+  }
+}
+if (savedTheme === 'dark') document.querySelector('.theme-toggle') && (document.querySelector('.theme-toggle').textContent = '☀️');
+
+// ==================== AUTH ====================
+function switchTab(tab) {
+  document.querySelectorAll('.auth-tab').forEach((t,i) => t.classList.toggle('active', (i===0 && tab==='login') || (i===1 && tab==='register')));
+  document.getElementById('login-form').style.display = tab === 'login' ? 'block' : 'none';
+  document.getElementById('register-form').style.display = tab === 'register' ? 'block' : 'none';
+  document.getElementById('auth-error').textContent = '';
+}
+
+async function doLogin() {
+  const email = document.getElementById('login-email').value.trim();
+  const pass = document.getElementById('login-password').value;
+  try {
+    await auth.signInWithEmailAndPassword(email, pass);
+  } catch(e) {
+    const msgs = { 'auth/user-not-found': 'Usuário não encontrado.', 'auth/wrong-password': 'Senha incorreta.', 'auth/invalid-email': 'E-mail inválido.', 'auth/invalid-credential': 'E-mail ou senha incorretos.' };
+    document.getElementById('auth-error').textContent = msgs[e.code] || 'Erro ao entrar. Tente novamente.';
+  }
+}
+
+async function doRegister() {
+  const name = document.getElementById('reg-name').value.trim();
+  const email = document.getElementById('reg-email').value.trim();
+  const pass = document.getElementById('reg-password').value;
+  if (!name) { document.getElementById('auth-error').textContent = 'Informe seu nome.'; return; }
+  try {
+    const cred = await auth.createUserWithEmailAndPassword(email, pass);
+    await db.collection('users').doc(cred.user.uid).set({ name, email, role: 'user', createdAt: firebase.firestore.FieldValue.serverTimestamp() });
+  } catch(e) {
+    const msgs = { 'auth/email-already-in-use': 'E-mail já cadastrado.', 'auth/weak-password': 'Senha deve ter pelo menos 6 caracteres.', 'auth/invalid-email': 'E-mail inválido.' };
+    document.getElementById('auth-error').textContent = msgs[e.code] || 'Erro ao criar conta.';
+  }
+}
+
+function doLogout() { auth.signOut(); }
+
+auth.onAuthStateChanged(async user => {
+  if (user) {
+    currentUser = user;
+    let snap = await db.collection('users').doc(user.uid).get();
+    if (!snap.exists) {
+      await db.collection('users').doc(user.uid).set({ name: user.email.split('@')[0], email: user.email, role: 'user', createdAt: firebase.firestore.FieldValue.serverTimestamp() });
+      snap = await db.collection('users').doc(user.uid).get();
+    }
+    currentUserData = snap.data();
+    showApp();
+  } else {
+    currentUser = null;
+    currentUserData = null;
+    showAuthScreen();
+  }
+});
+
+function showAuthScreen() {
+  document.getElementById('auth-screen').style.display = 'flex';
+  document.getElementById('app-screen').style.display = 'none';
+  if (unsubActions) { unsubActions(); unsubActions = null; }
+}
+
+function showApp() {
+  document.getElementById('auth-screen').style.display = 'none';
+  document.getElementById('app-screen').style.display = 'block';
+  const isAdmin = currentUserData.role === 'admin';
+  const initials = currentUserData.name.split(' ').map(n=>n[0]).slice(0,2).join('').toUpperCase();
+  document.getElementById('sidebar-avatar').textContent = initials;
+  document.getElementById('sidebar-name').textContent = currentUserData.name;
+  document.getElementById('sidebar-role').innerHTML = isAdmin ? '<span class="admin-badge">Admin</span>' : 'Usuário';
+  if (isAdmin) {
+    document.getElementById('nav-team').style.display = 'flex';
+    document.getElementById('admin-meta-section').style.display = 'block';
+  }
+  if (savedTheme === 'dark') document.querySelector('.theme-toggle').textContent = '☀️';
+  loadActions();
+  showPage('dashboard');
+}
+
+// ==================== NAVIGATION ====================
+function showPage(page) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+  document.getElementById('page-' + page).classList.add('active');
+  const titles = { dashboard: 'Dashboard', actions: 'Minhas Ações', metas: 'Metas da Equipe', team: 'Visão da Equipe' };
+  document.getElementById('page-title').textContent = titles[page] || page;
+  const navIndex = { dashboard: 0, actions: 1, metas: 2, team: 3 };
+  const navItems = document.querySelectorAll('.nav-item');
+  if (navItems[navIndex[page]]) navItems[navIndex[page]].classList.add('active');
+  if (page === 'metas') loadMetas();
+  if (page === 'team' && currentUserData.role === 'admin') loadTeam();
+}
+
+// ==================== ACTIONS ====================
+function loadActions() {
+  const isAdmin = currentUserData.role === 'admin';
+  let query = isAdmin ? db.collection('actions').orderBy('createdAt', 'desc') : db.collection('actions').where('userId', '==', currentUser.uid).orderBy('createdAt', 'desc');
+  if (unsubActions) unsubActions();
+  unsubActions = query.onSnapshot(snap => {
+    allActions = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+    renderActions();
+    updateDashboard();
+  });
+}
+
+function renderActions() {
+  const list = document.getElementById('actions-list');
+  let filtered = allActions;
+  if (currentFilter !== 'all') filtered = filtered.filter(a => a.status === currentFilter);
+  if (currentSearch) filtered = filtered.filter(a => a.title.toLowerCase().includes(currentSearch.toLowerCase()) || (a.description||'').toLowerCase().includes(currentSearch.toLowerCase()));
+  if (!filtered.length) { list.innerHTML = '<div class="empty-state"><div class="emoji">📋</div><p>Nenhuma ação encontrada.</p></div>'; return; }
+  list.innerHTML = filtered.map(a => {
+    const prioClass = { Alta: 'priority-alta', Média: 'priority-media', Baixa: 'priority-baixa' }[a.priority] || 'priority-media';
+    const statusClass = { 'Não iniciado': 'status-nao-iniciado', 'Em andamento': 'status-em-andamento', 'Aguardando': 'status-aguardando', 'Concluído': 'status-concluido' }[a.status] || 'status-nao-iniciado';
+    const deadline = a.deadline ? `📅 ${a.deadline}` : '';
+    const facilitators = a.facilitators ? `👥 ${a.facilitators}` : '';
+    const assignedTo = currentUserData.role === 'admin' && a.userName ? `👤 ${a.userName}` : '';
+    return `<div class="action-card">
+      <div class="action-priority ${prioClass}"></div>
+      <div class="action-info">
+        <div class="action-title">${a.title}</div>
+        <div class="action-meta">
+          <span>🎯 ${a.priority}</span>
+          ${deadline ? `<span>${deadline}</span>` : ''}
+          ${facilitators ? `<span>${facilitators}</span>` : ''}
+          ${assignedTo ? `<span>${assignedTo}</span>` : ''}
+        </div>
+      </div>
+      <span class="status-badge ${statusClass}">${a.status}</span>
+      <div class="action-actions">
+        <button class="icon-btn" onclick="openEditModal('${a.id}')" title="Editar / Comentar">✏️</button>
+        ${currentUserData.role === 'admin' ? `<button class="icon-btn danger" onclick="deleteAction('${a.id}')" title="Excluir">🗑️</button>` : ''}
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function filterActions(filter, btn) {
+  currentFilter = filter;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderActions();
+}
+
+function searchActions(val) { currentSearch = val; renderActions(); }
+
+function updateDashboard() {
+  const total = allActions.length;
+  const nao = allActions.filter(a => a.status === 'Não iniciado').length;
+  const and = allActions.filter(a => a.status === 'Em andamento').length;
+  const agu = allActions.filter(a => a.status === 'Aguardando').length;
+  const con = allActions.filter(a => a.status === 'Concluído').length;
+  document.getElementById('stat-total').textContent = total;
+  document.getElementById('stat-nao').textContent = nao;
+  document.getElementById('stat-and').textContent = and;
+  document.getElementById('stat-agu').textContent = agu;
+  document.getElementById('stat-con').textContent = con;
+  const pct = total ? Math.round((con/total)*100) : 0;
+  document.getElementById('dash-percent').textContent = pct + '%';
+  document.getElementById('dash-bar').style.width = pct + '%';
+  document.getElementById('dash-progress-desc').textContent = `${con} de ${total} ações concluídas`;
+}
+
+// ==================== MODAL ====================
+function openModal() {
+  editingActionId = null;
+  document.getElementById('modal-title').textContent = 'Nova Ação';
+  document.getElementById('act-title').value = '';
+  document.getElementById('act-desc').value = '';
+  document.getElementById('act-priority').value = 'Média';
+  document.getElementById('act-status').value = 'Não iniciado';
+  document.getElementById('act-deadline').value = '';
+  document.getElementById('act-facilitators').value = '';
+  document.getElementById('comments-section').style.display = 'none';
+  const isAdmin = currentUserData.role === 'admin';
+  const respField = document.getElementById('field-responsible');
+  if (isAdmin) {
+    respField.style.display = 'block';
+    loadUsersForSelect();
+  } else { respField.style.display = 'none'; }
+  document.getElementById('action-modal').classList.add('open');
+}
+
+async function loadUsersForSelect(selectedUid) {
+  const snap = await db.collection('users').get();
+  const sel = document.getElementById('act-responsible');
+  sel.innerHTML = snap.docs.map(d => `<option value="${d.id}" ${d.id===selectedUid?'selected':''}>${d.data().name}</option>`).join('');
+}
+
+async function openEditModal(id) {
+  const action = allActions.find(a => a.id === id);
+  if (!action) return;
+  editingActionId = id;
+  document.getElementById('modal-title').textContent = 'Editar Ação';
+  document.getElementById('act-title').value = action.title || '';
+  document.getElementById('act-desc').value = action.description || '';
+  document.getElementById('act-priority').value = action.priority || 'Média';
+  document.getElementById('act-status').value = action.status || 'Não iniciado';
+  document.getElementById('act-deadline').value = action.deadline || '';
+  document.getElementById('act-facilitators').value = action.facilitators || '';
+  const isAdmin = currentUserData.role === 'admin';
+  const respField = document.getElementById('field-responsible');
+  if (isAdmin) { respField.style.display = 'block'; await loadUsersForSelect(action.userId); }
+  else { respField.style.display = 'none'; }
+  document.getElementById('comments-section').style.display = 'block';
+  loadComments(id);
+  document.getElementById('action-modal').classList.add('open');
+}
+
+function closeModal() { document.getElementById('action-modal').classList.remove('open'); }
+
+async function saveAction() {
+  const title = document.getElementById('act-title').value.trim();
+  if (!title) { alert('Informe o título da ação.'); return; }
+  const isAdmin = currentUserData.role === 'admin';
+  let uid = currentUser.uid;
+  let uname = currentUserData.name;
+  if (isAdmin) {
+    const sel = document.getElementById('act-responsible');
+    if (sel && sel.value) {
+      uid = sel.value;
+      uname = sel.options[sel.selectedIndex].text;
+    }
+  }
+  const data = {
+    title, description: document.getElementById('act-desc').value,
+    priority: document.getElementById('act-priority').value,
+    status: document.getElementById('act-status').value,
+    deadline: document.getElementById('act-deadline').value,
+    facilitators: document.getElementById('act-facilitators').value,
+    userId: uid, userName: uname,
+    updatedAt: firebase.firestore.FieldValue.serverTimestamp()
+  };
+  if (editingActionId) {
+    await db.collection('actions').doc(editingActionId).update(data);
+  } else {
+    data.createdAt = firebase.firestore.FieldValue.serverTimestamp();
+    data.createdBy = currentUser.uid;
+    await db.collection('actions').add(data);
+  }
+  closeModal();
+}
+
+async function deleteAction(id) {
+  if (!confirm('Excluir esta ação?')) return;
+  await db.collection('actions').doc(id).delete();
+}
+
+// ==================== COMMENTS ====================
+async function loadComments(actionId) {
+  const snap = await db.collection('actions').doc(actionId).collection('comments').orderBy('createdAt').get();
+  const list = document.getElementById('comments-list');
+  if (!snap.docs.length) { list.innerHTML = '<div style="color:var(--text3);font-size:13px">Nenhum comentário ainda.</div>'; return; }
+  list.innerHTML = snap.docs.map(d => {
+    const c = d.data();
+    const date = c.createdAt ? new Date(c.createdAt.toDate()).toLocaleString('pt-BR') : '';
+    return `<div class="comment"><span class="comment-author">${c.authorName}</span><span class="comment-date">${date}</span><div class="comment-text">${c.text}</div></div>`;
+  }).join('');
+}
+
+async function addComment() {
+  const text = document.getElementById('comment-text').value.trim();
+  if (!text || !editingActionId) return;
+  await db.collection('actions').doc(editingActionId).collection('comments').add({
+    text, authorName: currentUserData.name, authorId: currentUser.uid,
+    createdAt: firebase.firestore.FieldValue.serverTimestamp()
+  });
+  document.getElementById('comment-text').value = '';
+  loadComments(editingActionId);
+}
+
+// ==================== METAS ====================
+async function loadMetas() {
+  const snap = await db.collection('metas').orderBy('createdAt', 'desc').get();
+  const list = document.getElementById('metas-list');
+  if (!snap.docs.length) { list.innerHTML = '<div class="empty-state"><div class="emoji">🎯</div><p>Nenhuma meta cadastrada ainda.</p></div>'; return; }
+  list.innerHTML = snap.docs.map(d => {
+    const m = d.data();
+    const pct = m.target ? Math.round((m.current/m.target)*100) : 0;
+    const unit = m.unit || '';
+    return `<div class="meta-card">
+      <div class="meta-header">
+        <div><div class="meta-title">${m.title}</div><div class="meta-desc">${m.description||''}</div></div>
+        <div style="font-size:26px;font-weight:800;color:var(--primary)">${pct}%</div>
+      </div>
+      <div class="meta-big-progress"><div class="meta-big-fill" style="width:${Math.min(pct,100)}%"></div></div>
+      <div class="meta-stats">
+        <div class="meta-stat"><strong>${m.current}${unit}</strong>Atual</div>
+        <div class="meta-stat"><strong>${m.target}${unit}</strong>Meta</div>
+        <div class="meta-stat"><strong>${pct}%</strong>Progresso</div>
+      </div>
+      ${currentUserData.role === 'admin' ? `<div style="margin-top:12px;display:flex;gap:8px"><button class="icon-btn" onclick="editMeta('${d.id}',${m.current},${m.target})">✏️ Atualizar valor</button><button class="icon-btn danger" onclick="deleteMeta('${d.id}')">🗑️</button></div>` : ''}
+    </div>`;
+  }).join('');
+}
+
+function openMetaModal() { document.getElementById('meta-modal').classList.add('open'); }
+function closeMetaModal() { document.getElementById('meta-modal').classList.remove('open'); }
+
+async function saveMeta() {
+  const title = document.getElementById('meta-title-input').value.trim();
+  if (!title) { alert('Informe o título da meta.'); return; }
+  await db.collection('metas').add({
+    title, description: document.getElementById('meta-desc-input').value,
+    target: Number(document.getElementById('meta-target').value) || 100,
+    current: Number(document.getElementById('meta-current').value) || 0,
+    unit: document.getElementById('meta-unit').value,
+    createdAt: firebase.firestore.FieldValue.serverTimestamp()
+  });
+  closeMetaModal();
+  loadMetas();
+}
+
+async function editMeta(id, current, target) {
+  const val = prompt(`Valor atual (meta: ${target}):`, current);
+  if (val === null) return;
+  await db.collection('metas').doc(id).update({ current: Number(val) });
+  loadMetas();
+}
+
+async function deleteMeta(id) {
+  if (!confirm('Excluir esta meta?')) return;
+  await db.collection('metas').doc(id).delete();
+  loadMetas();
+}
+
+// ==================== TEAM (admin) ====================
+async function loadTeam() {
+  const [usersSnap, actionsSnap] = await Promise.all([db.collection('users').get(), db.collection('actions').get()]);
+  const list = document.getElementById('team-list');
+  const actions = actionsSnap.docs.map(d => ({ id: d.id, ...d.data() }));
+  list.innerHTML = usersSnap.docs.map(d => {
+    const u = d.data();
+    const uActions = actions.filter(a => a.userId === d.id);
+    const total = uActions.length;
+    const done = uActions.filter(a => a.status === 'Concluído').length;
+    const pct = total ? Math.round((done/total)*100) : 0;
+    const initials = u.name.split(' ').map(n=>n[0]).slice(0,2).join('').toUpperCase();
+    return `<div class="team-card">
+      <div class="team-card-header">
+        <div class="team-avatar">${initials}</div>
+        <div>
+          <div class="team-name">${u.name} ${u.role==='admin'?'<span class="admin-badge">Admin</span>':''}</div>
+          <div class="team-email">${u.email}</div>
+        </div>
+      </div>
+      <div class="progress-label"><span>${done} concluídas</span><span>${total} total</span></div>
+      <div class="progress-bar"><div class="progress-fill" style="width:${pct}%"></div></div>
+      <div style="text-align:right;font-size:13px;color:var(--primary);font-weight:700;margin-top:6px">${pct}%</div>
+    </div>`;
+  }).join('') || '<div class="empty-state"><div class="emoji">👥</div><p>Nenhum usuário cadastrado.</p></div>';
+}
+</script>
+
+</body></html>
